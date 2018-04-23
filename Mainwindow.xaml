@@ -1,0 +1,15 @@
+<Window x:Class="COMPLETE_HANGMAN.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:COMPLETE_HANGMAN"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Canvas x:Name="myCanvas">
+<Label x:Name="lblInstructions" Content="Type your guess below:" Canvas.Top="10" MinWidth="100" FontFamily="Chiller" FontSize="20"/>
+<TextBox x:Name="txtLetterInput" MinWidth="100" Canvas.Top="35"/> <Label x:Name="lblUnderlines" Content="" Canvas.Left="235" Canvas.Top="92"/>
+        <Button x:Name="btnGuessLetter" Content="Guess" Click="btnGuessLetter_Click" MinWidth="100" Canvas.Top="50" FontFamily="Chiller" FontSize="25"/>
+       
+    </Canvas>
+</Window>
